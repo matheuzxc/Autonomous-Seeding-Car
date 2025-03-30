@@ -62,12 +62,6 @@ Todas as PCBs foram projetadas no **KiCad**, uma ferramenta open-source poderosa
 
 ---
 
-## Instruções de Fabricação
-
-Para fabricar as PCBs, exporte os arquivos gerados pelo KiCad, incluindo os arquivos de camadas, furos e serigrafia. Em seguida, envie esses arquivos para uma empresa de fabricação de PCBs ou produza-as internamente, caso tenha a infraestrutura necessária.
-
----
-
 ## Contribuições
 
 Contribuições para este projeto são bem-vindas! Caso deseje sugerir melhorias no design ou no código, fique à vontade para abrir um **pull request**.
