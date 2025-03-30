@@ -605,6 +605,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/localizacao_car/localizacao_car.step"
+			(hide yes)
 			(offset
 				(xyz -191 56.5 18)
 			)
@@ -3710,6 +3711,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/control_motor/control_motor.step"
+			(hide yes)
 			(offset
 				(xyz -156 143 -21)
 			)
