@@ -63,13 +63,13 @@ Abaixo estão os diagramas explicativos que foram usados para modelar a arquitet
 
 Este diagrama mostra os principais blocos de componentes na arquitetura física do **Autonomous-Seeding-Car**, representando os módulos de hardware e suas interações.
 
-![Bloco de Componente na Arquitetura Física](images/ex_capella.png)
+![Bloco de Componente na Arquitetura Física](imagem/ex_capella.png)
 
 ### Arquitetura Final
 
 O diagrama abaixo mostra a arquitetura final do sistema, com os componentes integrados e suas conexões, tanto físicas quanto lógicas. Ele ilustra como os diferentes módulos interagem para formar o sistema completo.
 
-![Arquitetura Final do Sistema](images/diagrama_capella.png)
+![Arquitetura Final do Sistema](imagem/diagrama_total.png)
 
 ---
 
