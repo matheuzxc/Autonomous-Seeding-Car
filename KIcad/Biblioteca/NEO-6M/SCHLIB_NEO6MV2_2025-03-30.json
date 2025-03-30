@@ -1,0 +1,43 @@
+{
+  "head": {
+    "docType": "2",
+    "editorVersion": "6.5.48",
+    "newgId": true,
+    "c_para": {
+      "name": "NEO6MV2",
+      "package": "",
+      "pre": "U?",
+      "Manufacturer": "UBLOX GPS NEO-6M",
+      "Manufacturer Part": "GY-GPS6MV2",
+      "Supplier": "",
+      "Supplier Part": "NEO-6M-0-001",
+      "link": "https://www.u-blox.com/sites/default/files/products/documents/NEO-6_DataSheet_(GPS.G6-HW-09005).pdf",
+      "Contributor": "lucianojulio"
+    },
+    "c_spiceCmd": null,
+    "hasIdFlag": true,
+    "x": 400,
+    "y": 300,
+    "utime": 1623156616,
+    "uuid": "bfece82f3e874effb3a6f0eb1be4bdf9",
+    "puuid": "",
+    "importFlag": 0
+  },
+  "canvas": "CA~1000~1000~#FFFFFF~yes~#CCCCCC~10~1000~1000~line~10~pixel~5~400~300",
+  "shape": [
+    "T~L~413.03~257~0~#000080~Arial~~normal~normal~~comment~NEO6MV2~1~start~gge6~0~pinpart",
+    "T~L~413.03~248~0~#000080~Arial~~normal~normal~~comment~U~1~start~gge8~0~pinpart",
+    "P~show~4~1~400~270~180~gge10~0^^400~270^^M 400 270 h 10~#880000^^1~412~273~0~VCC~start~~~#0000FF^^1~410~269~0~4~end~~~#0000FF^^0~407~270^^0~M 410 273 L 413 270 L 410 267",
+    "P~show~1~2~400~280~180~gge17~0^^400~280^^M 400 280 h 10~#880000^^1~412~283~0~RX~start~~~#0000FF^^1~410~279~0~3~end~~~#0000FF^^0~407~280^^0~M 410 283 L 413 280 L 410 277",
+    "P~show~2~3~400~290~180~gge24~0^^400~290^^M 400 290 h 10~#880000^^1~412~293~0~TX~start~~~#0000FF^^1~410~289~0~2~end~~~#0000FF^^0~407~290^^0~M 410 293 L 413 290 L 410 287",
+    "P~show~4~4~400~300~180~gge31~0^^400~300^^M 400 300 h 10~#880000^^1~412~303~0~GND~start~~~#0000FF^^1~410~299~0~1~end~~~#0000FF^^0~407~300^^0~M 410 303 L 413 300 L 410 297",
+    "R~410~260~3~3~30~50~#000000~1~0~none~gge38~0~"
+  ],
+  "BBox": {
+    "x": 399,
+    "y": 239.4,
+    "width": 58.6,
+    "height": 70.6
+  },
+  "colors": {}
+}
