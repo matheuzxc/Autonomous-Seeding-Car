@@ -15,7 +15,7 @@ void Motor::setSpeed(int vel) {
     velocidade = constrain(vel, 0, 255);
     if (velocidade == 0) {
         digitalWrite(in1, LOW);
-        digitalWrite(in2, LOW); // Desliga o motor
+        digitalWrite(in2, LOW); 
     }
     ledcWrite(pwmChannel, velocidade);
 }

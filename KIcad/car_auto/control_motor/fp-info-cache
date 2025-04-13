@@ -1,4 +1,4 @@
-24651107185647545
+24656338122846802
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -99351,9 +99351,30 @@ Varistor VF
 2
 2
 importados
+JST_B2P-VH_LF__SN_
+
+
+0
+2
+2
+importados
+JST_B6P-VH_LF__SN_
+
+
+0
+6
+6
+importados
 L298N DUAL H-BRIDGE MOTOR DRIVER MODULE FOOTPRINT
 
 
 0
 13
 13
+importados
+Mini Driver Motor Ponte H L298n
+
+
+0
+10
+7

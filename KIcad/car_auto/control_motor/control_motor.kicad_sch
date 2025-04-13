@@ -124,7 +124,7 @@
 				)
 			)
 			(property "Value" "B2P-VH_LF__SN_"
-				(at -6.858 -7.62 0)
+				(at -2.54 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -182,7 +182,6 @@
 			)
 			(property "Package" ""
 				(at 0 0 0)
-				(do_not_autoplace)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -193,7 +192,6 @@
 			)
 			(property "Price" ""
 				(at 0 0 0)
-				(do_not_autoplace)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -715,19 +713,19 @@
 				)
 			)
 		)
-		(symbol "importados:L298N DUAL H-BRIDGE MOTOR DRIVER MODULE"
+		(symbol "importados:Mini_L298N"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U?"
-				(at 0 0 0)
+			(property "Reference" "U"
+				(at 13.462 4.064 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "L298N DUAL H-BRIDGE MOTOR DRIVER MODULE"
+			(property "Value" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -762,67 +760,31 @@
 					(hide yes)
 				)
 			)
-			(symbol "L298N DUAL H-BRIDGE MOTOR DRIVER MODULE_0_0"
+			(symbol "Mini_L298N_0_1"
 				(rectangle
-					(start -30.48 33.02)
-					(end 15.24 2.54)
+					(start 3.81 0)
+					(end 24.13 -17.78)
 					(stroke
-						(width 0.254)
-						(type solid)
+						(width 0)
+						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(text "L298N DUAL H-BRIDGE \nMOTOR DRIVER MODULE"
-					(at -27.94 29.7688 0)
+			)
+			(symbol "Mini_L298N_1_1"
+				(text "Mini Driver Motor Ponte H L298n"
+					(at 14.986 1.778 0)
 					(effects
 						(font
-							(face "KiCad Font")
-							(size 1.8288 1.8288)
-						)
-						(justify left top)
-					)
-				)
-				(pin unspecified line
-					(at -25.4 -2.54 90)
-					(length 5.08)
-					(name "+12V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "+12V"
-						(effects
-							(font
-								(size 0.0254 0.0254)
-							)
+							(size 1.27 1.27)
 						)
 					)
 				)
-				(pin unspecified line
-					(at -22.86 -2.54 90)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "GND"
-						(effects
-							(font
-								(size 0.0254 0.0254)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -10.16 -2.54 90)
-					(length 5.08)
+				(pin input line
+					(at 1.27 -8.89 0)
+					(length 2.54)
 					(name "IN1"
 						(effects
 							(font
@@ -830,125 +792,17 @@
 							)
 						)
 					)
-					(number "IN1"
-						(effects
-							(font
-								(size 0.0254 0.0254)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -7.62 -2.54 90)
-					(length 5.08)
-					(name "IN2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "IN2"
-						(effects
-							(font
-								(size 0.0254 0.0254)
-							)
-						)
-					)
 				)
-				(pin unspecified line
-					(at -5.08 -2.54 90)
-					(length 5.08)
-					(name "IN3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "IN3"
-						(effects
-							(font
-								(size 0.0254 0.0254)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -2.54 -2.54 90)
-					(length 5.08)
-					(name "IN4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "IN4"
-						(effects
-							(font
-								(size 0.0254 0.0254)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -35.56 20.32 0)
-					(length 5.08)
-					(name "OUT1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "OUT1"
-						(effects
-							(font
-								(size 0.0254 0.0254)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -35.56 15.24 0)
-					(length 5.08)
-					(name "OUT2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "OUT2"
-						(effects
-							(font
-								(size 0.0254 0.0254)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 20.32 15.24 180)
-					(length 5.08)
-					(name "OUT3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "OUT3"
-						(effects
-							(font
-								(size 0.0254 0.0254)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 20.32 20.32 180)
-					(length 5.08)
+				(pin output line
+					(at 26.67 -16.51 180)
+					(length 2.54)
 					(name "OUT4"
 						(effects
 							(font
@@ -956,10 +810,154 @@
 							)
 						)
 					)
-					(number "OUT4"
+					(number "10"
 						(effects
 							(font
-								(size 0.0254 0.0254)
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 1.27 -11.43 0)
+					(length 2.54)
+					(name "IN2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 1.27 -13.97 0)
+					(length 2.54)
+					(name "IN3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 1.27 -16.51 0)
+					(length 2.54)
+					(name "IN4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 1.27 -3.81 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 1.27 -1.27 0)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 26.67 -8.89 180)
+					(length 2.54)
+					(name "OUT1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 26.67 -11.43 180)
+					(length 2.54)
+					(name "OUT2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 26.67 -13.97 180)
+					(length 2.54)
+					(name "OUT3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -1338,43 +1336,441 @@
 			)
 		)
 	)
+	(global_label "IN4-B"
+		(shape input)
+		(at 41.91 52.07 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "015168a9-fcdc-4acd-bf72-225858f53265")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 41.91 61.0424 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "IN2-A"
+		(shape input)
+		(at 200.66 125.73 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0ac76ece-0f60-4394-b0b8-c2e6d429b8aa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 191.869 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "OUT4"
+		(shape input)
+		(at 226.06 130.81 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "237b56ce-6fd3-4f9d-abbb-ab432f033cb3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 233.8833 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "IN1-A"
+		(shape input)
+		(at 49.53 52.07 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "27b355fe-8764-49ce-b6fa-2b763bf1774a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.53 60.861 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "OUT2"
+		(shape input)
+		(at 139.7 52.07 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "340f0732-a605-4e22-a6ef-208ed77fe54d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 139.7 59.8933 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PMW-B"
+		(shape input)
+		(at 39.37 52.07 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3f1d4028-f0dd-4bb8-b48b-0b0d4d0b4737")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 39.37 62.0704 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PMW-A"
+		(shape input)
+		(at 52.07 52.07 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "44e2fd3c-b9b2-4eb0-b076-3dd9bc48f11e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 52.07 61.889 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "IN2-A"
+		(shape input)
+		(at 46.99 52.07 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "586a33f1-87d5-49cd-b171-0a3d7e88d2a8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 60.861 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "OUT2"
+		(shape input)
+		(at 226.06 125.73 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5dcdd9d0-7073-44a6-b6c3-527e695bfbb5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 233.8833 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "OUT3"
+		(shape input)
+		(at 226.06 128.27 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "767fe258-fd2a-4ff3-976e-693d2d4b88e9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 233.8833 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "OUT4"
+		(shape input)
+		(at 162.56 52.07 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "770b88c3-4d3e-4edc-b11f-4175c55da67a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 162.56 59.8933 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "OUT1"
+		(shape input)
+		(at 137.16 52.07 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7c92ea62-930b-4467-9a3c-ca2f46ca6504")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 137.16 59.8933 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "OUT1"
+		(shape input)
+		(at 226.06 123.19 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9af5671d-c041-4866-b8e8-5b0c0c913cca")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 233.8833 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "IN4-B"
+		(shape input)
+		(at 200.66 130.81 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b1b0fffd-ab92-42f6-8dd0-9329f443a985")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 191.6876 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "OUT3"
+		(shape input)
+		(at 165.1 52.07 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b8397d57-19bb-4e10-b9a9-7f7ce1130ad8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 165.1 59.8933 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "IN1-A"
+		(shape input)
+		(at 200.66 123.19 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dcd4cb2e-7994-47b1-acce-4427ec9aa707")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 191.869 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "IN3-B"
+		(shape input)
+		(at 44.45 52.07 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ece86cbd-25a0-425d-b44a-7366b626c03f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 44.45 61.0424 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "IN3-B"
+		(shape input)
+		(at 200.66 128.27 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f8235aec-6158-46a6-8122-1b340dbe836e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 191.6876 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(symbol
-		(lib_id "importados:L298N DUAL H-BRIDGE MOTOR DRIVER MODULE")
-		(at 173.99 96.52 0)
+		(lib_id "importados:B6P-VH_LF__SN_")
+		(at 44.45 44.45 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "165c4b4a-9188-444f-a9a4-76c8da72f3e9")
-		(property "Reference" "U2"
-			(at 166.37 58.42 0)
+		(uuid "0bfb4275-36d0-4411-92ac-2313fbcdd2dc")
+		(property "Reference" "J2"
+			(at 55.88 42.5449 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "L298N DUAL H-BRIDGE MOTOR DRIVER MODULE"
-			(at 166.37 60.96 0)
+		(property "Value" "B6P-VH_LF__SN_"
+			(at 38.862 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Footprint" "importados:L298N DUAL H-BRIDGE MOTOR DRIVER MODULE FOOTPRINT"
-			(at 173.99 96.52 0)
+		(property "Footprint" "importados:JST_B6P-VH_LF__SN_"
+			(at 44.45 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 96.52 0)
+			(at 44.45 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1383,7 +1779,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 173.99 96.52 0)
+			(at 44.45 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1391,40 +1787,670 @@
 				(hide yes)
 			)
 		)
-		(pin "GND"
-			(uuid "ea82f78b-2364-4647-82eb-6e17afdfb2ec")
+		(property "MF" ""
+			(at 44.45 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
 		)
-		(pin "IN2"
-			(uuid "fb8288fb-85a3-4b85-b241-92d43ce19cb9")
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 44.45 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
 		)
-		(pin "IN1"
-			(uuid "0796fe84-6d34-4d7e-a53e-eb72dc778d6c")
+		(property "Package" ""
+			(at 44.45 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
 		)
-		(pin "+12V"
-			(uuid "6e5b3179-2195-4d33-8140-cdfafac72ebe")
+		(property "Price" ""
+			(at 44.45 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
 		)
-		(pin "OUT2"
-			(uuid "7595b74c-9e2d-4f8f-a865-e17843175c07")
+		(property "Check_prices" ""
+			(at 44.45 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
 		)
-		(pin "IN3"
-			(uuid "ad704be0-be3b-4368-b87f-18b82a200451")
+		(property "STANDARD" ""
+			(at 44.45 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
 		)
-		(pin "OUT4"
-			(uuid "911cb422-1f88-44e0-9329-6f80c2d921b9")
+		(property "PARTREV" ""
+			(at 44.45 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
 		)
-		(pin "OUT3"
-			(uuid "e0de28ba-886a-4162-8eee-d76dd35d6d97")
+		(property "SnapEDA_Link" ""
+			(at 44.45 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
 		)
-		(pin "IN4"
-			(uuid "d206db61-fef1-445a-b0a3-813395fc3dbc")
+		(property "MP" ""
+			(at 44.45 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
 		)
-		(pin "OUT1"
-			(uuid "a0316140-851c-44b9-97c4-e0a65f0cd464")
+		(property "Description_1" ""
+			(at 44.45 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 44.45 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 44.45 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "62034ca1-8c98-4166-9752-49915b35fcf3")
+		)
+		(pin "3"
+			(uuid "b0be2a13-e66b-4418-80ed-ffa740fca82a")
+		)
+		(pin "6"
+			(uuid "660d48d7-7dc9-4234-a81a-c378bdae7375")
+		)
+		(pin "4"
+			(uuid "758ee79a-38dc-41eb-9b3d-89fe413ae2f5")
+		)
+		(pin "1"
+			(uuid "dae4a545-f687-4e74-96dd-5390ec3de7c5")
+		)
+		(pin "2"
+			(uuid "93de68ea-1752-43ef-9539-601fb2362928")
 		)
 		(instances
 			(project ""
 				(path "/0a8d5af9-95bf-4c5e-8f65-2322f491bca4"
-					(reference "U2")
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 226.06 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "12715bda-4f17-4864-ad27-59523660f192")
+		(property "Reference" "#PWR07"
+			(at 226.06 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 226.06 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 226.06 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 226.06 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7110e70b-8a98-40be-bab2-282a4197621b")
+		)
+		(instances
+			(project "control_motor"
+				(path "/0a8d5af9-95bf-4c5e-8f65-2322f491bca4"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 200.66 115.57 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2884d954-cfe7-49f1-b84b-b65c374a6ca2")
+		(property "Reference" "#PWR09"
+			(at 204.47 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "9V"
+			(at 195.58 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 200.66 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c5b76ddc-d948-4dea-ab88-ccb8e73fc0ee")
+		)
+		(instances
+			(project "control_motor"
+				(path "/0a8d5af9-95bf-4c5e-8f65-2322f491bca4"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 200.66 118.11 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "431b0c5c-0da6-4152-a906-62ff9daf9b28")
+		(property "Reference" "#PWR010"
+			(at 194.31 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND2"
+			(at 195.58 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 200.66 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0aa28ff8-ae07-46b7-891d-4153c8d711c2")
+		)
+		(instances
+			(project "control_motor"
+				(path "/0a8d5af9-95bf-4c5e-8f65-2322f491bca4"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 111.76 52.07 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "49a58288-0949-43d5-bcc5-6da4aa94f4ff")
+		(property "Reference" "#PWR05"
+			(at 111.76 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "9V"
+			(at 111.76 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 111.76 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d5b8ac4c-495b-473f-a491-5867c05c7e19")
+		)
+		(instances
+			(project "control_motor"
+				(path "/0a8d5af9-95bf-4c5e-8f65-2322f491bca4"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 233.68 45.72 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5c62dcde-62fb-4b72-ad08-1de30aacb5cc")
+		(property "Reference" "#PWR08"
+			(at 229.87 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "5V"
+			(at 237.49 45.7199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 233.68 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.68 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 233.68 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "14fdcf44-4685-4089-9d50-47b514cecfd7")
+		)
+		(instances
+			(project "control_motor"
+				(path "/0a8d5af9-95bf-4c5e-8f65-2322f491bca4"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "importados:B2P-VH_LF__SN_")
+		(at 109.22 44.45 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5fdd4612-94a3-4ee7-bf68-0ad78ca7db36")
+		(property "Reference" "J5"
+			(at 115.57 42.5449 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "B2P-VH_LF__SN_"
+			(at 104.648 36.068 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "importados:JST_B2P-VH_LF__SN_"
+			(at 109.22 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 109.22 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 109.22 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 109.22 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 109.22 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 109.22 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 109.22 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 109.22 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 109.22 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 109.22 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 109.22 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 109.22 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 109.22 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 109.22 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f7a423cb-7c56-4bcc-b14d-790f183d8a79")
+		)
+		(pin "1"
+			(uuid "4da90b77-9392-4e0a-88fc-7f995aabba0a")
+		)
+		(instances
+			(project "control_motor"
+				(path "/0a8d5af9-95bf-4c5e-8f65-2322f491bca4"
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -1432,15 +2458,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 120.65 35.56 0)
+		(at 251.46 30.48 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "1bccb6e3-6dc6-4a1e-84c1-0b48791a4483")
+		(uuid "63696561-e33c-4741-b24a-f54dfa6f20ef")
 		(property "Reference" "H3"
-			(at 119.38 30.48 0)
+			(at 250.19 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1449,7 +2475,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 123.19 35.5599 0)
+			(at 254 30.4799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1459,7 +2485,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 120.65 35.56 0)
+			(at 251.46 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1468,7 +2494,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 120.65 35.56 0)
+			(at 251.46 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1477,7 +2503,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 120.65 35.56 0)
+			(at 251.46 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1486,7 +2512,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "97159a48-3e85-4b26-b8ba-d7aadaf53a00")
+			(uuid "18591983-817c-4ba5-b06c-faac3ed97b65")
 		)
 		(instances
 			(project "control_motor"
@@ -1498,17 +2524,18 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 49.53 44.45 180)
+		(lib_id "power:GND")
+		(at 109.22 52.07 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "223a76d0-41ef-4f9c-89f0-a10f02ac971c")
+		(uuid "6b5f89ff-a2ee-4ca7-bd3d-1fe66cb5630c")
 		(property "Reference" "#PWR02"
-			(at 49.53 40.64 0)
+			(at 109.22 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1516,8 +2543,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
-			(at 49.53 49.53 0)
+		(property "Value" "GND2"
+			(at 109.22 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1525,7 +2552,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 44.45 0)
+			(at 109.22 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1534,7 +2561,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 44.45 0)
+			(at 109.22 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1542,8 +2569,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 49.53 44.45 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 109.22 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1552,7 +2579,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "b3477d9d-8930-4a50-abff-a6c905c66a78")
+			(uuid "03d67dfe-9039-41f0-8ec4-f05044b64dc7")
 		)
 		(instances
 			(project "control_motor"
@@ -1565,15 +2592,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 125.73 35.56 0)
+		(at 256.54 30.48 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "26133c3f-b249-4bf2-8964-4fa8488ae78b")
+		(uuid "6fdd4ee4-9026-4ebe-ace6-ccb0266569f3")
 		(property "Reference" "H4"
-			(at 124.714 30.734 0)
+			(at 255.524 25.654 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1582,7 +2609,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 128.27 35.5599 0)
+			(at 259.08 30.4799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1592,7 +2619,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 125.73 35.56 0)
+			(at 256.54 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1601,7 +2628,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 125.73 35.56 0)
+			(at 256.54 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1610,7 +2637,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 125.73 35.56 0)
+			(at 256.54 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1619,7 +2646,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "d831d61d-7a5b-4ab0-84d3-fbf375d7c039")
+			(uuid "e9b624da-cda4-4e63-bd5b-f51ef2c06f54")
 		)
 		(instances
 			(project "control_motor"
@@ -1631,536 +2658,8 @@
 		)
 	)
 	(symbol
-		(lib_id "importados:B2P-VH_LF__SN_")
-		(at 69.85 36.83 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2b7cb36c-5317-4632-8f56-8b5d36e11dbd")
-		(property "Reference" "J2"
-			(at 76.2 34.9249 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "B2P-VH_LF__SN_"
-			(at 63.5 26.67 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "importados:JST_B2P-VH_LF__SN_"
-			(at 69.85 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 69.85 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 69.85 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" ""
-			(at 69.85 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 69.85 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" ""
-			(at 69.85 36.83 0)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" ""
-			(at 69.85 36.83 0)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" ""
-			(at 69.85 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 69.85 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 69.85 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 69.85 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" ""
-			(at 69.85 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 69.85 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" ""
-			(at 69.85 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 69.85 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "29acbbba-2858-4dec-a721-cd3f984540de")
-		)
-		(pin "1"
-			(uuid "952219c4-5116-45dc-a213-24aa2e0eaed6")
-		)
-		(instances
-			(project "control_motor"
-				(path "/0a8d5af9-95bf-4c5e-8f65-2322f491bca4"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 110.49 35.56 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "3e1c1b28-3bcd-4d2c-897f-4e1f6d10d6a1")
-		(property "Reference" "H1"
-			(at 109.474 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 113.03 35.5599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 110.49 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 110.49 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 110.49 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9e0839a1-3bf9-4e26-8194-3a0be4027d63")
-		)
-		(instances
-			(project "control_motor"
-				(path "/0a8d5af9-95bf-4c5e-8f65-2322f491bca4"
-					(reference "H1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "importados:B6P-VH_LF__SN_")
-		(at 41.91 36.83 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "406161a8-11f9-4986-bf92-0fca4e2061c5")
-		(property "Reference" "J1"
-			(at 53.34 34.9249 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "B6P-VH_LF__SN_"
-			(at 34.798 26.162 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "importados:JST_B6P-VH_LF__SN_"
-			(at 41.91 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 41.91 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 41.91 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" ""
-			(at 41.91 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 41.91 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" ""
-			(at 41.91 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" ""
-			(at 41.91 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" ""
-			(at 41.91 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 41.91 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 41.91 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 41.91 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" ""
-			(at 41.91 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 41.91 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" ""
-			(at 41.91 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 41.91 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "f5b4b115-6bea-44e1-90bb-6db289bfebcb")
-		)
-		(pin "4"
-			(uuid "b6804637-3ba0-4024-9d47-c6dfdffaa9b0")
-		)
-		(pin "2"
-			(uuid "d7e783cd-cff0-41ee-8c6f-432e04cb71f5")
-		)
-		(pin "3"
-			(uuid "d73c1de4-edf7-4825-9235-1f4b6a415c5d")
-		)
-		(pin "1"
-			(uuid "8587e41c-aeab-40c1-9fcb-d21b5d0a4d68")
-		)
-		(pin "6"
-			(uuid "7bd4ef4c-5664-49c7-b359-bdaad737d640")
-		)
-		(instances
-			(project "control_motor"
-				(path "/0a8d5af9-95bf-4c5e-8f65-2322f491bca4"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 115.57 35.56 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "71c749d8-6ae7-47c3-b427-9e44b8e3877e")
-		(property "Reference" "H2"
-			(at 114.3 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 118.11 35.5599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 115.57 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 115.57 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 115.57 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6a2713f5-fc1b-4484-bbc3-76ad8724c550")
-		)
-		(instances
-			(project "control_motor"
-				(path "/0a8d5af9-95bf-4c5e-8f65-2322f491bca4"
-					(reference "H2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "yaaj_dcdc_stepdown_lm2596:YAAJ_DCDC_StepDown_LM2596")
-		(at 163.83 40.64 0)
+		(at 223.52 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2169,7 +2668,7 @@
 		(fields_autoplaced yes)
 		(uuid "71cc307f-75f3-4690-a136-f0c01448fca3")
 		(property "Reference" "U1"
-			(at 163.83 30.48 0)
+			(at 223.52 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2177,7 +2676,7 @@
 			)
 		)
 		(property "Value" "YAAJ_DCDC_StepDown_LM2596"
-			(at 163.83 33.02 0)
+			(at 223.52 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2185,7 +2684,7 @@
 			)
 		)
 		(property "Footprint" "KiCad:YAAJ_DCDC_StepDown_LM2596"
-			(at 162.56 40.64 0)
+			(at 222.25 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2194,7 +2693,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 162.56 40.64 0)
+			(at 222.25 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2203,7 +2702,7 @@
 			)
 		)
 		(property "Description" "module : adjustable step down module 3.2V-40V to 1.25V-35V 3A"
-			(at 163.83 40.64 0)
+			(at 223.52 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2233,17 +2732,35 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 46.99 44.45 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 241.3 30.48 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8624d007-4553-4375-b22c-80f3aa7edafe")
-		(property "Reference" "#PWR01"
-			(at 46.99 50.8 0)
+		(uuid "94bba510-c00e-4da9-87ad-c05bf3737eda")
+		(property "Reference" "H1"
+			(at 240.284 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 243.84 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 241.3 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2251,16 +2768,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 46.99 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 46.99 44.45 0)
+		(property "Datasheet" "~"
+			(at 241.3 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2268,17 +2777,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 46.99 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 46.99 44.45 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 241.3 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2287,7 +2787,75 @@
 			)
 		)
 		(pin "1"
-			(uuid "70ee377c-a540-4464-9965-7ccab0649f6b")
+			(uuid "5029318f-0bfa-4dae-a089-5db235d4eb45")
+		)
+		(instances
+			(project "control_motor"
+				(path "/0a8d5af9-95bf-4c5e-8f65-2322f491bca4"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 213.36 45.72 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e128298-4081-4505-a65e-07982677b748")
+		(property "Reference" "#PWR01"
+			(at 217.17 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "9V"
+			(at 209.55 45.7199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 213.36 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 213.36 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7d3f146a-3772-47e3-8f2d-d5d0753319f2")
 		)
 		(instances
 			(project "control_motor"
@@ -2300,7 +2868,8 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 72.39 44.45 180)
+		(at 83.82 52.07 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2309,7 +2878,7 @@
 		(fields_autoplaced yes)
 		(uuid "a48d1c20-94f0-459a-acef-3d288b7a23b3")
 		(property "Reference" "#PWR04"
-			(at 72.39 40.64 0)
+			(at 83.82 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2317,8 +2886,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
-			(at 72.39 49.53 0)
+		(property "Value" "5V"
+			(at 83.82 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2326,7 +2895,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 72.39 44.45 0)
+			(at 83.82 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2335,7 +2904,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 44.45 0)
+			(at 83.82 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2344,7 +2913,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 72.39 44.45 0)
+			(at 83.82 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2365,8 +2934,266 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 246.38 30.48 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "a6988086-9ae3-4153-9be2-92545f520714")
+		(property "Reference" "H2"
+			(at 245.11 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 248.92 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 246.38 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 246.38 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "68338d03-6aea-4221-bed7-a0f81b0dca7b")
+		)
+		(instances
+			(project "control_motor"
+				(path "/0a8d5af9-95bf-4c5e-8f65-2322f491bca4"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "importados:B2P-VH_LF__SN_")
+		(at 162.56 44.45 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "abf8c582-4778-4536-8bcf-8f24852b119b")
+		(property "Reference" "J4"
+			(at 168.91 42.5449 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "B2P-VH_LF__SN_"
+			(at 160.274 36.322 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "importados:JST_B2P-VH_LF__SN_"
+			(at 162.56 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 162.56 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 162.56 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 162.56 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 162.56 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 162.56 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 162.56 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 162.56 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 162.56 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 162.56 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 162.56 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 162.56 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 162.56 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "98070389-a304-4d64-a7d2-fa7cbcd6b3fd")
+		)
+		(pin "1"
+			(uuid "254e0ae9-5994-4f55-825b-989948379bc3")
+		)
+		(instances
+			(project "control_motor"
+				(path "/0a8d5af9-95bf-4c5e-8f65-2322f491bca4"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 69.85 44.45 0)
+		(at 86.36 52.07 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2375,7 +3202,7 @@
 		(fields_autoplaced yes)
 		(uuid "ad27f337-0542-4d16-8b72-4f58bb8c0b16")
 		(property "Reference" "#PWR03"
-			(at 69.85 50.8 0)
+			(at 86.36 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2384,7 +3211,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 69.85 49.53 0)
+			(at 86.36 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2392,7 +3219,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 44.45 0)
+			(at 86.36 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2401,7 +3228,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 44.45 0)
+			(at 86.36 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2410,7 +3237,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 69.85 44.45 0)
+			(at 86.36 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2425,6 +3252,544 @@
 			(project "control_motor"
 				(path "/0a8d5af9-95bf-4c5e-8f65-2322f491bca4"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "importados:B2P-VH_LF__SN_")
+		(at 83.82 44.45 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b58b67cc-f1c3-426c-871c-5d33b75ee6dc")
+		(property "Reference" "J1"
+			(at 90.17 42.5449 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "B2P-VH_LF__SN_"
+			(at 77.724 36.322 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "importados:JST_B2P-VH_LF__SN_"
+			(at 83.82 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 83.82 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 83.82 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 83.82 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 83.82 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 83.82 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 83.82 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 83.82 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 83.82 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 83.82 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 83.82 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 83.82 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 83.82 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 83.82 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "23b9fa84-31cf-48b5-ae76-159134048d79")
+		)
+		(pin "1"
+			(uuid "9abddf71-21a9-4ef9-a8ca-0672ae5bd6af")
+		)
+		(instances
+			(project ""
+				(path "/0a8d5af9-95bf-4c5e-8f65-2322f491bca4"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "importados:B2P-VH_LF__SN_")
+		(at 137.16 44.45 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b7b54db2-0a7a-4da0-bc3d-065c7b08f181")
+		(property "Reference" "J3"
+			(at 143.51 42.5449 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "B2P-VH_LF__SN_"
+			(at 128.27 36.322 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "importados:JST_B2P-VH_LF__SN_"
+			(at 137.16 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 137.16 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 137.16 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 137.16 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 137.16 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 137.16 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 137.16 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 137.16 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 137.16 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 137.16 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 137.16 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 137.16 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 137.16 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "902cc6ae-4f84-45ca-b30b-051dfd0b10f7")
+		)
+		(pin "1"
+			(uuid "3e541f1a-6bfd-4317-bcac-d7704219e493")
+		)
+		(instances
+			(project "control_motor"
+				(path "/0a8d5af9-95bf-4c5e-8f65-2322f491bca4"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 220.98 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bfcdf961-6eeb-4aab-b7c6-fdab3e8398ea")
+		(property "Reference" "#PWR06"
+			(at 220.98 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND2"
+			(at 220.98 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 220.98 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "53e14bb7-de01-46db-91aa-718895fbd6c9")
+		)
+		(instances
+			(project "control_motor"
+				(path "/0a8d5af9-95bf-4c5e-8f65-2322f491bca4"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "importados:Mini_L298N")
+		(at 199.39 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c4e0999a-2bf1-4ecf-8ab7-0d6054117b10")
+		(property "Reference" "U3"
+			(at 214.376 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 214.376 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "importados:Mini Driver Motor Ponte H L298n"
+			(at 199.39 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.39 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 199.39 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "10"
+			(uuid "feed6d5d-2509-4efb-806b-571e5bb0982c")
+		)
+		(pin "1"
+			(uuid "3426f7ac-ed1b-4893-a711-4c8a9f41bb4c")
+		)
+		(pin "4"
+			(uuid "39490399-7611-4f4d-acc3-8b2cd8e12dd1")
+		)
+		(pin "5"
+			(uuid "e693d669-5f29-4d20-a0ab-3eae7508f618")
+		)
+		(pin "9"
+			(uuid "3d957de5-bcd7-4785-806b-c39a6e909bde")
+		)
+		(pin "7"
+			(uuid "baa6ba08-7ff8-4802-b418-d6754a2bc68d")
+		)
+		(pin "8"
+			(uuid "0fc4e6c7-c315-4b95-8b3d-ee31e0cb5037")
+		)
+		(pin "2"
+			(uuid "626a9c18-ccf4-4c3d-b325-f589195291ec")
+		)
+		(pin "3"
+			(uuid "adddf542-9c0f-49e2-a62c-727d4ea7156d")
+		)
+		(pin "6"
+			(uuid "4714c8a7-edc4-4a38-88a7-31778477a997")
+		)
+		(instances
+			(project ""
+				(path "/0a8d5af9-95bf-4c5e-8f65-2322f491bca4"
+					(reference "U3")
 					(unit 1)
 				)
 			)
