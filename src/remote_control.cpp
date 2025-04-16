@@ -18,43 +18,31 @@ void RemoteControl::RemoteUpdate(){
         msgBluetooth.trim();
 
         if(msgBluetooth == "F"){
+            
             RemoteControl::front();
             delay(50);
         }else if (msgBluetooth == "B"){
+            
             RemoteControl::back();
             delay(50);
         }else if (msgBluetooth == "L"){
+            
             RemoteControl::left();
             delay(50);
         }else if (msgBluetooth == "R"){
+            
             RemoteControl::right();
             delay(50);
-        }else{
+        }else if (msgBluetooth == "S"){
+            
+            RemoteControl::stop();
+            delay(50);
+        }
+        else{
             Serial.println("Mensagem não reconhecida:" + msgBluetooth);
         }
     }
 }
-
-// void RemoteControl::RemoteUpdateFromDabble(){
-//     Dabble.processInput();  // Atualiza os dados recebidos do app
-
-//     int x = GamePad.getx_axis();
-//     int y = GamePad.gety_axis();
-
-//     // Lógica de movimentação
-//     if (y > 10) {
-//         RemoteControl::front();
-//     } else if (y < -10) {
-//         RemoteControl::back();
-//     } else if (x > 10) {
-//         RemoteControl::right();
-//     } else if (x < -10) {
-//         RemoteControl::left();
-//     } else {
-//         MotorA.stop();
-//         MotorB.stop();
-//     }
-// }
 
 
 void RemoteControl::Begin(){
@@ -88,4 +76,8 @@ void RemoteControl::right(){
     MotorA.forward();
     MotorB.backward();
     Serial.println("Ir para direita");
+}
+void RemoteControl::stop(){
+    MotorA.stop();
+    Serial.println("Parar");
 }

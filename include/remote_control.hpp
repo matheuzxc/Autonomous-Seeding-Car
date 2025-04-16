@@ -96,6 +96,9 @@ public:
      * @brief Vira o robô para a direita.
      */
     void right();
+
+
+    void stop();
     
     /**
      * @brief Executa o comando de plantar sementes.

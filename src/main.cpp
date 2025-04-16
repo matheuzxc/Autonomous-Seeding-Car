@@ -4,8 +4,8 @@
 #include <esp_log.h>
 
 
-Motor motorB(18, 19, 5, 0);  // Exemplo de pinos para o motor esquerdo
-Motor motorA(21, 22, 4, 1);   // Exemplo de pinos para o motor direito
+Motor motorB(18, 19, 5, 0);  
+Motor motorA(21, 22, 4, 1);   
 RemoteControl remote(motorA, motorB);
 
 void setup() {   
