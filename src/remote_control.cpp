@@ -6,78 +6,78 @@
 
 static const char* TAG = "REMOTE CONTROL";
 
+// Construtor
+RemoteControl::RemoteControl(Motor& _MotorA, Motor& _MotorB)
+    : MotorA(_MotorA), MotorB(_MotorB) {}
 
-RemoteControl::RemoteControl(Motor& _MotorA, Motor& _MotorB): MotorA(_MotorA),MotorB(_MotorB){}
+// Variável para armazenar o comando atual
+String comandoAtual = "S";
 
+void RemoteControl::RemoteUpdate() {
+    if (SerialBT.available()) {
+        String comando = SerialBT.readStringUntil('\n');
+        comando.trim();
 
+        if (comando.length() == 0 || comando[0] == '\0' || comando == "\r") return;
 
-void RemoteControl::RemoteUpdate(){
-
-    if(SerialBT.available()){
-        msgBluetooth = SerialBT.readStringUntil('\n');
-        msgBluetooth.trim();
-
-        if(msgBluetooth == "F"){
-            
-            RemoteControl::front();
-            delay(50);
-        }else if (msgBluetooth == "B"){
-            
-            RemoteControl::back();
-            delay(50);
-        }else if (msgBluetooth == "L"){
-            
-            RemoteControl::left();
-            delay(50);
-        }else if (msgBluetooth == "R"){
-            
-            RemoteControl::right();
-            delay(50);
-        }else if (msgBluetooth == "S"){
-            
-            RemoteControl::stop();
-            delay(50);
+        if (comando == "F" || comando == "B" || comando == "L" || comando == "R" || comando == "S") {
+            comandoAtual = comando;
+        } else {
+            Serial.println("Mensagem não reconhecida: " + comando);
         }
-        else{
-            Serial.println("Mensagem não reconhecida:" + msgBluetooth);
-        }
+    }
+
+    // Executa continuamente o último comando válido
+    if (comandoAtual == "F") {
+        front();
+    } else if (comandoAtual == "B") {
+        back();
+    } else if (comandoAtual == "L") {
+        left();
+    } else if (comandoAtual == "R") {
+        right();
+    } else if (comandoAtual == "S") {
+        stop();
+    }
+
+    delay(50); // Pequeno atraso para evitar sobrecarga
+}
+
+void RemoteControl::Begin() {
+    bool sucesso = SerialBT.begin("Autonomous Car Remote");
+    if (sucesso) {
+        Serial.println("Bluetooth iniciado com sucesso, conecte-se.");
+    } else {
+        Serial.println("Falha ao iniciar o Bluetooth!");
     }
 }
 
-
-void RemoteControl::Begin(){
-    
-    bool sucesso = SerialBT.begin("Autonomous Car Remote");
-    //Dabble.begin("Autonomous Car Remote");
-     if (sucesso) {
-         Serial.println("Bluetooth iniciado com sucesso, conecte-se.");
-        
-     } else {
-         Serial.println("Falha ao iniciar o Bluetooth!");
-     }
-}
-
-void RemoteControl::front(){
+void RemoteControl::front() {
     MotorA.forward();
     MotorB.forward();
     Serial.println("Ir para frente.");
 }
-void RemoteControl::back(){
-    MotorA.forward();
-    MotorB.forward();
+
+void RemoteControl::back() {
+    MotorA.backward();
+    MotorB.backward();
     Serial.println("Ir para trás.");
 }
-void RemoteControl::left(){
+
+void RemoteControl::left() {
     MotorA.backward();
     MotorB.forward();
-    Serial.println("Ir para esquerda");
+    Serial.println("Ir para esquerda.");
 }
-void RemoteControl::right(){
+
+void RemoteControl::right() {
     MotorA.forward();
     MotorB.backward();
-    Serial.println("Ir para direita");
+    Serial.println("Ir para direita.");
 }
-void RemoteControl::stop(){
+
+void RemoteControl::stop() {
     MotorA.stop();
-    Serial.println("Parar");
+    MotorB.stop();  // Adicionei stop também ao MotorB, caso não estivesse incluído
+    Serial.println("Parar.");
 }

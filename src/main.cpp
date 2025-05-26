@@ -4,8 +4,8 @@
 #include <esp_log.h>
 
 
-Motor motorB(18, 19, 5, 0);  
-Motor motorA(21, 22, 4, 1);   
+Motor motorB(18, 19);  
+Motor motorA(21, 22);   
 RemoteControl remote(motorA, motorB);
 
 void setup() {   
