@@ -1,29 +1,28 @@
 #include "control_motor.hpp"
 
-Motor::Motor(int _in1, int _in2)
-    : in1(_in1), in2(_in2), velocidade(255) {}
+Motor::Motor(int in1, int in2, int ch1, int ch2)
+    : pin1(in1), pin2(in2), canal1(ch1), canal2(ch2) {}
 
 void Motor::begin() {
-    pinMode(in1, OUTPUT);
-    pinMode(in2, OUTPUT);
-    stop();  
+    ledcSetup(canal1, 5000, 8); // freq = 5kHz, 8 bits (0–255)
+    ledcSetup(canal2, 5000, 8);
+    ledcAttachPin(pin1, canal1);
+    ledcAttachPin(pin2, canal2);
 }
 
-void Motor::setSpeed(int vel) {
-    velocidade = 255;  
+void Motor::forward(int velocidade) {
+    velocidade = constrain(velocidade, 0, 255);
+    ledcWrite(canal1, velocidade);
+    ledcWrite(canal2, 0);
 }
 
-void Motor::forward() {
-    digitalWrite(in1, HIGH);   
-    digitalWrite(in2, LOW);    
-}
-
-void Motor::backward() {
-    digitalWrite(in1, LOW);    
-    digitalWrite(in2, HIGH);   
+void Motor::backward(int velocidade) {
+    velocidade = constrain(velocidade, 0, 255);
+    ledcWrite(canal1, 0);
+    ledcWrite(canal2, velocidade);
 }
 
 void Motor::stop() {
-    digitalWrite(in1, LOW);    
-    digitalWrite(in2, LOW);    
+    ledcWrite(canal1, 0);
+    ledcWrite(canal2, 0);
 }

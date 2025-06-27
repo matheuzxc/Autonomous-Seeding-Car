@@ -10,6 +10,8 @@
         "string_view": "cpp",
         "memory": "cpp",
         "random": "cpp",
-        "initializer_list": "cpp"
-    }
+        "initializer_list": "cpp",
+        "cmath": "cpp"
+    },
+    "cmake.sourceDirectory": "C:/Users/mathe/OneDrive/UFSC/FACUL/INTEGRADOR/Autonomous-Seeding-Car/gps"
 }

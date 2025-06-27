@@ -52,25 +52,25 @@ void RemoteControl::Begin() {
     }
 }
 
-void RemoteControl::front() {
+void RemoteControl::right() {
     MotorA.forward();
     MotorB.forward();
     Serial.println("Ir para frente.");
 }
 
-void RemoteControl::back() {
+void RemoteControl::left(){
     MotorA.backward();
     MotorB.backward();
     Serial.println("Ir para trás.");
 }
 
-void RemoteControl::left() {
+void RemoteControl::back() {
     MotorA.backward();
     MotorB.forward();
     Serial.println("Ir para esquerda.");
 }
 
-void RemoteControl::right() {
+void RemoteControl::front() {
     MotorA.forward();
     MotorB.backward();
     Serial.println("Ir para direita.");
